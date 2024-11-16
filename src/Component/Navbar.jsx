@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import coffee from "../assets/coffee.svg";
+
 import Button from "./button";
 const Navbar = () => {
   return (
@@ -7,13 +8,13 @@ const Navbar = () => {
       {/* icons */}
       <div className="flex items-center gap-3">
         <img src={coffee} alt="coffe icon" className="h-10" />
-        <h1 className="text-xl font-semibold">Buy Me a Coffee</h1>
+        <h1 className="text-sm lg:text-xl font-semibold ">Buy Me a Coffee</h1>
       </div>
       {/* Some anchors links */}
-      <div>
+      <div className="hidden md:block">
         <ul className="flex gap-10 font-semibold ">
           <li>
-            <a href="">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
             <a href="">FAQ</a>
