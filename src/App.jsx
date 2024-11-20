@@ -8,10 +8,12 @@ import Signin from "./Component/Signin";
 import Signup from "./Component/Signup";
 import Dashboard from "./Component/dashboard";
 import User from "./Component/User";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
+      <Toaster position="top-center" reverseOrder={false} />
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import coffee from "../assets/coffee.svg";
-
 import Button from "./button";
 import { useState } from "react";
 import Avatar from "./Avatar";
+
+
 const Navbar = () => {
   const [signedIn, setSignedIn] = useState(true);
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
       {/* icons */}
       <Link to="/">
         <div className="flex items-center gap-3">
-          <img src={coffee} alt="coffe icon" className="h-10" />
+          <img src={coffee} alt="coffe_icon" className="h-10" />
           <h1 className="text-sm lg:text-xl font-semibold ">Buy Me a Coffee</h1>
         </div>
       </Link>
